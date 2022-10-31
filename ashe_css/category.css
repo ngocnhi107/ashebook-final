@@ -1,0 +1,25 @@
+.category-right{
+    width: 100%;
+}
+.category-right-top-wrap li{
+    display: block;
+    width: 50%;
+    float: right;
+    margin-bottom: 50px;
+}
+.category-right-top-item{
+    padding: 0px 12px;
+    
+}
+
+.category-right-top-item select{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 30%;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
