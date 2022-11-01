@@ -9,7 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/58d7e4d8cc.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tản Văn</title>
+    <title>Tiểu thuyết</title>
     <link rel="stylesheet" href="ashe_css/home.css">
     <link rel="stylesheet" href="ashe_icon/themify-icons.css">
     <link rel="stylesheet" href="ashe_css/category.css">
@@ -47,10 +47,9 @@ session_start();
 
 
 
-
         </div>
-
         <div class="header__others">
+               
 
                 <?php
                     if(isset($_SESSION['email'])){
@@ -72,24 +71,15 @@ session_start();
     
     
     <div class="new__product">
-        <h2 class="new__product-title" style="font-size: 50px;">Những tác phẩm thuộc thể loại Tản Văn</h2>
-        
+        <h2 class="new__product-title" style="font-size: 50px;">Những tác phẩm thuộc thể loại Tiểu Thuyết</h2>
+                
     <?php
-    $sql = "select * from product where idcategory = 0136 ";
+    $sql = "select * from product where idcategory = 0116 ";
 
     if (isset($_GET["cat"])) {
         $a = $_GET["cat"];
-
-        $sql = "SELECT *
-                FROM product where idcategory = 0136 ";
     } else
         $a = "";
-    if (!empty($_GET["page"])) {
-        $page = $_GET["page"];
-        $sql .= "limit   " . (($page - 1) * 20) . ",20";
-    } else {
-        $sql .= " limit 20";
-    }
     ?>
 
 <?php
@@ -112,6 +102,7 @@ session_start();
 
 
                                 <p class="product_thumbnail-product-name"><?php echo $row["product_name"]; ?></p>
+
                                 </p>
 
                             </a>
@@ -140,7 +131,7 @@ session_start();
 
     <center>
 
-        <a href="product(tanvan).php?cat=<?php echo $a; ?>&page=1">1</a>
+        <a href="product(tieuthuyet).php?cat=<?php echo $a; ?>&page=1">1</a>
        
     </center>
     <div class="main-footer">
