@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
    $password = ($_POST['password']);
    if(isset($_POST['remember_me'])){
       //tạo cookie
-      setcookie('email', $email);
+      setcookie('email', $_POST['email']);
       setcookie('password', $_POST['password']);
    }
 
