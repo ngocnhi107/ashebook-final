@@ -80,7 +80,7 @@ session_start();
                                 ?>
                             </form>
                             </li>
-                        </ul>
+
             </div>
             <div class="new__product-list">
 
@@ -90,20 +90,9 @@ session_start();
                 if (isset($_GET["cat"]))
                  {
                     $a = $_GET["cat"];
-                    echo $a;
-                    $sql = "SELECT * FROM product";
+ 
                 } else
                     $a = "";
-
-                    if(isset($GET["page"])){
-                        $page = $_GET["page"];
-                        $sql .="limit".(($page-1)*20).",20";
-                    }
-                
-                    else
-                    {
-                        $sql.=" limit 20";
-                    }
                     ?>
 
 
