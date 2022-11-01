@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
-    session_start();
-    include("permission.php")
+<?php
+session_start();
 ?>
+<?php include("permission.php")?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/58d7e4d8cc.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiểu thuyết</title>
+    <title>Tản Văn</title>
     <link rel="stylesheet" href="ashe_css/home.css">
     <link rel="stylesheet" href="ashe_icon/themify-icons.css">
     <link rel="stylesheet" href="ashe_css/category.css">
@@ -47,9 +47,10 @@
 
 
 
+
         </div>
+
         <div class="header__others">
-               
 
                 <?php
                     if(isset($_SESSION['email'])){
@@ -71,16 +72,16 @@
     
     
     <div class="new__product">
-        <h2 class="new__product-title" style="font-size: 50px;">Những tác phẩm thuộc thể loại Tiểu Thuyết</h2>
-                
+        <h2 class="new__product-title" style="font-size: 50px;">Những tác phẩm thuộc thể loại Tản Văn</h2>
+        
     <?php
-    $sql = "select * from product where idcategory = 0116 ";
+    $sql = "select * from product where idcategory = 0136 ";
 
     if (isset($_GET["cat"])) {
         $a = $_GET["cat"];
 
         $sql = "SELECT *
-                FROM product where idcategory = 0116 ";
+                FROM product where idcategory = 0136 ";
     } else
         $a = "";
     if (!empty($_GET["page"])) {
@@ -111,7 +112,6 @@
 
 
                                 <p class="product_thumbnail-product-name"><?php echo $row["product_name"]; ?></p>
-
                                 </p>
 
                             </a>
@@ -140,7 +140,7 @@
 
     <center>
 
-        <a href="product(tieuthuyet).php?cat=<?php echo $a; ?>&page=1">1</a>
+        <a href="product(tanvan).php?cat=<?php echo $a; ?>&page=1">1</a>
        
     </center>
     <div class="main-footer">
