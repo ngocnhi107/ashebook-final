@@ -79,17 +79,8 @@ session_start();
 
     if (isset($_GET["cat"])) {
         $a = $_GET["cat"];
-
-        $sql = "SELECT *
-                FROM product where idcategory = 0136 ";
     } else
         $a = "";
-    if (!empty($_GET["page"])) {
-        $page = $_GET["page"];
-        $sql .= "limit   " . (($page - 1) * 20) . ",20";
-    } else {
-        $sql .= " limit 20";
-    }
     ?>
 
 <?php
