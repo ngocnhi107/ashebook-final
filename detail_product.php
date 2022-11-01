@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-	session_start(); 
- ?>
-<?php include("permission.php")?>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://kit.fontawesome.com/58d7e4d8cc.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm</title>
-    <link rel="stylesheet" href="ashe_css/home.css">
-    <link rel="stylesheet" href="ashe_icon/themify-icons.css">
-    <link rel="stylesheet" href="ashe_css/category.css">
-    <style>
+    <?php
+	    session_start(); 
+    ?>
+    <?php include("permission.php")?>
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://kit.fontawesome.com/58d7e4d8cc.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chi tiết sản phẩm</title>
+        <link rel="stylesheet" href="ashe_css/home.css">
+        <link rel="stylesheet" href="ashe_icon/themify-icons.css">
+        <link rel="stylesheet" href="ashe_css/category.css">
+        <style>
     <?php include "ashe_css/home.css"?><?php include "ashe_icon/themifyicons.css"?>
     <?php include "ashe_css/detail_product.css"?>
     .footer{
@@ -23,14 +23,14 @@
 </head>
 
 
-
 <body>
 
     <header class="header">
         <div class="header__logo">
-            <a href="home.php">
+            <a href="http://localhost:8080/ashebook/home.php">
 
-                <img src="http://localhost:8080/ashebook/ashe_img/ashebooklogo2.png" alt="Logo" class="header__logo-img">
+                <img src="http://localhost:8080/ashebook/ashe_img/ashebooklogo2.png" alt="Logo" 
+                class="header__logo-img">
                 <span class="header__logo-name">ASHEBOOK</span>
             </a>
         </div>
@@ -57,9 +57,6 @@
         </div>
 
     </header>
-
-
-
 
     <?php
     require_once "config.php";
