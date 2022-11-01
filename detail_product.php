@@ -28,37 +28,13 @@
 
     <header class="header">
         <div class="header__logo">
-            <a href="home.php">
+            <a href="http://localhost:8080/ashebook/home.php">
+            <li>Thoát</li>
 
                 <img src="http://localhost:8080/ashebook/ashe_img/ashebooklogo2.png" alt="Logo" class="header__logo-img">
                 <span class="header__logo-name">ASHEBOOK</span>
             </a>
-        </div>
-        <div class="header__menu">
-            <a href="http://localhost:8080/ashebook/home.php" class="header__menu-home">
-                <li>Trang chủ</li>
-            </a>
-            <a href="http://localhost:8080/ashebook/product(tieuthuyet).php" class="header__menu-product-tieuthuyet">
-                <li>Tiểu thuyết</li>
-            </a>
-            <a href="http://localhost:8080/ashebook/product(ngontinh).php" class="header__menu-product-ngontinh">
-                <li>Ngôn tình</li>
-            </a>
-            <a href="http://localhost:8080/ashebook/product(tanvan).php" class="header__menu-product-tanvan">
-                <li>Tản văn</li>
-            </a>
-            <a href="http://localhost:8080/ashebook/product(tacphamkinhdien).php" class="header__menu-product-tacphamkinhdien">
-                <li>Tác phẩm kinh điển</li>
-            </a>
-            <a href="http://localhost:8080/ashebook/contact.php" class="header__menu-contact">
-                <li>Liên hệ</li>
-            </a>
-
-
-
-
-        </div>
-        <div class="header__others">
+    
         </div>
 
     </header>
@@ -190,3 +166,6 @@
 </body>
 
 </html>
+<?php
+session_destroy();
+?>
